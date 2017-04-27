@@ -12,5 +12,5 @@ app.get('/*', function(req, res) {
 });
 
 app.listen(port, function()  {
-    console.log('Running on port 8080');
+    console.log('Running on port ' + port);
 });
