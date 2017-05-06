@@ -13,11 +13,34 @@ $(function() {
         offset: 70
     });
 
-
-
     /* Hide mobile menu after clicking on a link
     -----------------------------------------------*/
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
-})
+
+    /*Send data
+    -----------------------------------------------*/
+    $('#user-msg').submit(function(e) {
+        e.preventDefault();
+
+        var userMsg = {
+            name: $('#user-name').val(),
+            email: $('#user-email').val(),
+            message: $('#user-message').val()
+        };
+
+        $.post('http://localhost:8080', userMsg);
+        clearInput();
+
+        function clearInput() {
+            $('#user-name').val('');
+            $('#user-email').val('');
+            $('#user-message').val('');
+        }
+
+
+
+    });
+
+});
