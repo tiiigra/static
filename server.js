@@ -27,34 +27,41 @@ app.post('/', function (req, res) {
         message: req.body.message
     };
     console.log(newUser);
+
+    forwardUserMessage(newUser);
     res.send('Message sent');
+
+
+
 });
 
-// create reusable transporter object using the default SMTP transport
-let transporter = nodemailer.createTransport({
-    service: 'google',
-    auth: {
-        user: 'baklantat@gmail.com',
-        pass: 'goodjoboriented'
-    }
-});
+function forwardUserMessage(newUser) {
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+        service: 'yandex',
+        auth: {
+            user: 'testapps.baklan@yandex.ru',
+            pass: 'test1122334455'
+        }
+    });
 
 // setup email data with unicode symbols
-let mailOptions = {
-    from: '"Fred Foo 👻" <foo@blurdybloop.com>', // sender address
-    to: 'baklant@i.ua', // list of receivers
-    subject: 'Hello ✔', // Subject line
-    text: 'Hello world ?', // plain text body
-    html: '<b>Hello world ?</b>' // html body
-};
+    let mailOptions = {
+        from: newUser.name  + '<testapps.baklan@yandex.ru>', // sender address
+        to: 'baklant@i.ua', // list of receivers
+        replyTo: newUser.email,
+        subject: 'Autonomous Classroom Vehicles', // Subject line
+        text: newUser.message, // plain text body
+    };
 
 // send mail with defined transport object
-transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-        return console.log(error);
-    }
-    console.log('Message %s sent: %s', info.messageId, info.response);
-});
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log("Send mail error: ", error);
+        }
+        console.log('Message %s sent: %s', info.messageId, info.response);
+    });
+}
 
 
 app.listen(port, function()  {
