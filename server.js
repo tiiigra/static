@@ -51,7 +51,7 @@ function forwardUserMessage(newUser) {
         to: 'baklant@i.ua', // list of receivers
         replyTo: newUser.email,
         subject: 'Autonomous Classroom Vehicles', // Subject line
-        text: newUser.name + ": " + /\n/ + newUser.message, // plain text body
+        text: newUser.name + ":\n"  + newUser.message, // plain text body
     };
 
 // send mail with defined transport object
