@@ -24,13 +24,14 @@ $(function() {
     $('#user-msg').submit(function(e) {
         e.preventDefault();
 
-        var userMsg = {
-            name: $('#user-name').val(),
-            email: $('#user-email').val(),
-            message: $('#user-message').val()
-        };
+        var endPoint = 'https://classroomrobot.herokuapp.com',
+            userMsg = {
+                name: $('#user-name').val(),
+                email: $('#user-email').val(),
+                message: $('#user-message').val()
+            };
 
-        $.post('http://localhost:8080', userMsg);
+        $.post(endPoint, userMsg);
         clearInput();
 
         function clearInput() {
@@ -38,9 +39,6 @@ $(function() {
             $('#user-email').val('');
             $('#user-message').val('');
         }
-
-
-
     });
 
 });
