@@ -47,11 +47,11 @@ function forwardUserMessage(newUser) {
 
 // setup email data with unicode symbols
     let mailOptions = {
-        from: newUser.name  + '<testapps.baklan@yandex.ru>', // sender address
+        from: ' "Robot website" <testapps.baklan@yandex.ru>', // sender address
         to: 'baklant@i.ua', // list of receivers
         replyTo: newUser.email,
         subject: 'Autonomous Classroom Vehicles', // Subject line
-        text: newUser.message, // plain text body
+        text: newUser.name + ": " + /\n/ + newUser.message, // plain text body
     };
 
 // send mail with defined transport object
