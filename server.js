@@ -30,9 +30,6 @@ app.post('/', function (req, res) {
 
     forwardUserMessage(newUser);
     res.send('Message sent');
-
-
-
 });
 
 function forwardUserMessage(newUser) {

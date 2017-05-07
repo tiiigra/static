@@ -172,6 +172,11 @@ p {
 .banner-bg {
     background: rgba(0,0,0,0.7);
     float: left;
+    width: 100%;
+}
+
+.banner-bg span {
+    display: block;
 }
 
 .banner-catch-phrase {
@@ -179,10 +184,12 @@ p {
     font-family: "Roboto", sans-serif;
     font-size: 35px;
     font-style: normal !important;
-    max-width: 722px;
+    max-width: 560px;
     line-height: 1.3em !important;
     color: #eee;
     margin-top: 7px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .icon-container {
@@ -194,6 +201,11 @@ p {
 #divider {
     padding-top: 60px;
     padding-bottom: 80px;
+}
+
+#divider p {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .custom-button {
@@ -332,7 +344,7 @@ p {
 
 .designed-robot-bg {
     position: absolute;
-    right: -307px;
+    right: -200px;
     top: -111px;
     opacity: 0.5;
 }
@@ -362,6 +374,10 @@ p {
 
 .robot-block h2 {
     margin-bottom: 20px;
+}
+
+.robot-second-block {
+    padding-top: 60px;
 }
 
 .robot-first-block > div,
@@ -414,6 +430,7 @@ p {
 
 .designed-robot-container.features p {
     padding-top: 35px;
+    padding-bottom: 35px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -507,6 +524,12 @@ address > div {
     }
 }
 
+@media (min-width: 768px) {
+    .container {
+        width: 850px;
+    }
+}
+
 @media (max-width: 991px) {
     #home {
         background: url(../images/home-bg9.jpg) no-repeat;
@@ -518,15 +541,63 @@ address > div {
     .navbar-brand {
         display: none;
     }
+
+    .banner-container {
+        position: absolute;
+        right: 0;
+        left: initial;
+        bottom: 104px;
+        margin-right: -15px;
+        margin-left: inherit;
+        width: 600px;
+    }
+
+    .banner-catch-phrase {
+        font-size: 30px;
+    }
+
+    .custom-button {
+        margin-bottom: 50px;
+    }
+
+    .divider-container p {
+        max-width: 400px;
+    }
+
+    #feature {
+        margin-top: -50px;
+    }
+
+    .cs-pic-container {
+        display: none;
+    }
+
+    .python-container img {
+        display: none;
+    }
+
+
+    /*.designed-robot-container.features ul {*/
+        /*width: 100%;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    /*}*/
+
+    /*.designed-robot-container .column li {*/
+        /*padding-left: 0px;*/
+        /*padding-top: 0px;*/
+    /*}*/
+
 }
 
-@media (max-width: 767px) {
+    @media (max-width: 767px) {
     .brand-logo {
         margin-left: 15px;
     }
     .navbar-brand {
         display: flex;
     }
+
 }
 
 @media (max-width: 575px) {
@@ -539,4 +610,5 @@ address > div {
         font-stretch: initial;
         letter-spacing: 0.5px;
     }
+
 }
