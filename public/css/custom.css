@@ -714,7 +714,6 @@ address > div {
     .robot-second-block .robot-pic-container {
         margin: -30px auto 30px;
     }
-
 }
 
 @media (max-width: 575px) {
@@ -726,6 +725,193 @@ address > div {
         font-size: 12px !important;
         font-stretch: initial;
         letter-spacing: 0.5px;
+    }
+
+    #home {
+        height: 292px;
+        background-position: inherit;
+    }
+
+    .banner-catch-phrase {
+        font-size: 18px;
+    }
+
+    .banner-container {
+        bottom: 55px;
+        width: 300px;
+    }
+
+    #divider {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    #feature {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: -30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .cs p, .designed-robot-container p {
+        font-size: 16px;
+    }
+
+    .cs ul {
+        left: 0;
+    }
+
+    .cs li {
+        width: 100%;
+    }
+
+    .cs p, .designed-robot-container p {
+        padding: 0;
+    }
+
+    #feature .fa {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        margin-right: 10px;
+    }
+
+    .jobs-list li, .designed-robot-container li {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    .cs-pic-container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .block-article {
+        padding-top: 20px;
+    }
+
+    #python {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .python-pic-container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #robots {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .robot-pic-responsive {
+        max-width: 300px;
+        margin: 30px auto;
+    }
+
+    .robot-second-block .robot-pic-container {
+        max-width: 180px;
+    }
+
+    .designed-robot-container ul {
+        width: 100%;
+    }
+
+    .feature-list {
+        margin-top: 20px;
+        left: 0px;
+    }
+
+    .tick {
+        max-width: 25px;
+        margin-top: 0;
+    }
+
+    .designed-robot-bg img {
+        max-height: 250px;
+    }
+
+    .designed-robot-bg {
+        position: absolute;
+        right: -93px;
+        top: 95px;
+        opacity: 0.2;
+        height: 180px;
+    }
+
+    .horizontal-separator:before {
+        margin-top: 30px;
+    }
+
+    .designed-robot-container.features ul {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .designed-robot-container.features ul:first-child {
+        margin-top: 20px;
+    }
+
+    .designed-robot-container.features .fa {
+        height: 25px;
+        line-height: 25px;
+        width: 25px;
+        margin-right: 15px;
+        font-size: 25px;
+        top: 3px;
+    }
+
+    .designed-robot-feature {
+        padding: 30px 0;
+    }
+
+    .designed-robot-container.features p {
+        padding-top: 20px;
+    }
+
+    #contact .overlay {
+        padding-top: 30px;
+    }
+
+    .overlay .transparent {
+        padding-bottom: 30px;
+    }
+
+    .form-name,
+    .form-submit,
+    .form-email {
+        width: 100%;
+    }
+
+    #contact address .fa {
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        margin-right: 15px;
+    }
+
+    #contact address .fa:before {
+        font-size: 16px;
+    }
+
+    #contact .contact-form {
+        padding-top: 15px;
+    }
+
+    .underline-middle:after {
+        width: 90px;
+    }
+
+    .block-article p,
+    .python-container p,
+    .robot-block p {
+        text-indent: 30px;
+        line-height: 1.8;
+        letter-spacing: 0.3px;
     }
 
 }
