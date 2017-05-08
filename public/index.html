@@ -64,7 +64,7 @@
 		<!-- start home -->
 		<section id="home">
 			<div class="overlay">
-				<div class="container banner-container">
+				<div class="banner-container">
 						<div class="col-md-9 wow fadeIn banner-bg" data-wow-delay="0.3s">
 							<p class="tm-white banner-catch-phrase">
 								<span>Teach Your Students to Program,</span>
@@ -131,6 +131,10 @@
 					</div>
 				</div>
 				<div class="row block-article clearfix">
+					<div class="col-md-6 wow fadeInRight pos-rel cs-pic-container" data-wow-delay="0.6s">
+						<img src="images/software-img-0.png" class="img-responsive" alt="feature img">
+						<i class="fa fa-play-circle play-icon"></i>
+					</div>
 					<div class="col-md-6 wow fadeInLeft pos-rel" data-wow-delay="0.6s">
 						<p>Whether you are designing a new automobile, discovering the secrets of physics, unraveling the
 							of DNA, making a few dollars on financial markets or winning elections the you increasingly need
@@ -146,10 +150,7 @@
 							offer computer science. In China Computer Science is only offered at university.
 						</p>
 					</div>
-					<div class="col-md-6 wow fadeInRight pos-rel cs-pic-container" data-wow-delay="0.6s">
-						<img src="images/software-img-0.png" class="img-responsive" alt="feature img">
-						<i class="fa fa-play-circle play-icon"></i>
-					</div>
+
 				</div>
 			</div>
 		</section>
@@ -164,6 +165,9 @@
 					</div>
 					<div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
 						<h2 class="text-uppercase underline underline-blue">Why Python?</h2>
+						<div class="col-md-6 wow fadeInUp python-pic-container" data-wow-delay="0.6s">
+							<img src="images/software-img-3.png" class="img-responsive" alt="feature img">
+						</div>
 						<p>The Python Language was designed to be easy to learn and easy to write.
 							Clean syntax, high-level data structures,
 							dynamic typing, and rich support libraries combine to make Python a very productive tool for
@@ -181,9 +185,19 @@
 		<section id="robots" class="robot-block">
 			<div id="learn-robots" class="container">
 				<div class="row robot-first-block">
-					<div>
+					<div class="robot-first-block__pic-container">
+						<div class="col-md-6 wow fadeInUp width-30 robot-pic" data-wow-delay="0.6s">
+							<div class="robot-pic-container">
+								<img src="images/robot_clipart3.png" class="img-responsive" alt="feature img">
+							</div>
+						</div>
 						<div class="col-md-6 wow fadeInUp width-70" data-wow-delay="0.6s">
 							<h2 class="text-uppercase underline underline-orange">Robots</h2>
+							<div class="col-md-6 wow fadeInUp width-30 robot-pic-responsive" data-wow-delay="0.6s">
+								<div>
+									<img src="images/robot_clipart3.png" class="img-responsive" alt="feature img">
+								</div>
+							</div>
 							<div class="robot-text-block robot-text-block_left">
 								<p>
 									Robotics is employed to give the students interesting projects to exercise their programming skills,
@@ -197,14 +211,8 @@
 									inaccuracies and limitations.
 								</p>
 							</div>
-
 						</div>
 
-						<div class="col-md-6 wow fadeInUp width-30 robot-pic" data-wow-delay="0.6s">
-							<div class="robot-pic-container">
-								<img src="images/robot_clipart3.png" class="img-responsive" alt="feature img">
-							</div>
-						</div>
 					</div>
 				</div>
 				<div class="row robot-second-block">
@@ -366,7 +374,7 @@
 						<div class="col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
 							<div class="contact-form">
 								<form id="user-msg" class="clearfix">
-									<div class="col-sm-6">
+									<div class="col-sm-6 form-name">
 										<input required
 												type="text"
 												id="user-name"
@@ -374,7 +382,7 @@
 												placeholder="Enter Your Name"
 										>
 									</div>
-									<div class="col-sm-6">
+									<div class="col-sm-6 form-email">
 										<input type="email"
 											   required
 											   id="user-email"
@@ -390,7 +398,7 @@
 												  placeholder="Message"
 												  rows="4"></textarea>
 									</div>
-									<div class="col-sm-6">
+									<div class="col-sm-6 form-submit">
 										<input type="submit" class="form-control text-uppercase" value="Submit">
 									</div>
 								</form>
