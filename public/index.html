@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<title>Autonomous Classroom Vehicles</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width; initial-scale = 1.0;
+		maximum-scale=1.0; user-scalable=no" />
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 
@@ -124,7 +125,7 @@
 							<li><i class="fa fa-rocket"></i>Engineers</li>
 							<li><i class="fa fa-bug"></i>IT specialists</li>
 							<li><i class="fa fa-flask"></i>Physical Scientists</li>
-							<li><i class="fa fa-code"></i>Biologists</li>
+							<li><i class="microscope"></i><span class="bio">Biologists</span></li>
 							<li><i class="fa fa-bar-chart"></i>Financial Traders</li>
 							<li><i class="fa fa-comments"></i>Politicians</li>
 						</ul>
@@ -133,7 +134,6 @@
 				<div class="row block-article clearfix">
 					<div class="col-md-6 wow fadeInRight pos-rel cs-pic-container" data-wow-delay="0.6s">
 						<img src="images/software-img-0.png" class="img-responsive" alt="feature img">
-						<i class="fa fa-play-circle play-icon"></i>
 					</div>
 					<div class="col-md-6 wow fadeInLeft pos-rel" data-wow-delay="0.6s">
 						<p>Whether you are designing a new automobile, discovering the secrets of physics, unraveling the
@@ -354,9 +354,11 @@
 						<div class="col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
 							<h2 class="text-uppercase white">Get in touch</h2>
 							<address>
-								<div>
+								<div class="pos-rel">
 									<i class="fa fa-map-marker"></i>
-									35 Clarendon Rd. Belmont MA 02478 USA
+									<span class="address">
+										35 Clarendon Rd. Belmont MA 02478 USA
+									</span>
 								</div>
 								<div class="pos-rel">
 									<i class="fa fa-phone"></i>
@@ -365,32 +367,37 @@
 										<span>+86 182 1924 2500 China Phone</span>
 									</div>
 								</div>
-								<div>
+								<div class="pos-rel">
 									<i class="fa fa-envelope-o"></i>
-									kevin@acv77.com
+									<span class="email">
+										kevin@acv77.com
+									</span>
 								</div>
 							</address>
 						</div>
 						<div class="col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
 							<div class="row">
 								<div class="contact-form">
-									<form id="user-msg" class="clearfix">
-										<div class="col-sm-6 form-name">
-											<input required
-												   type="text"
-												   id="user-name"
-												   class="form-control"
-												   placeholder="Enter Your Name"
-											>
+									<form id="user-msg">
+										<div class="clearfix">
+											<div class="col-sm-6 form-name">
+												<input required
+													   type="text"
+													   id="user-name"
+													   class="form-control"
+													   placeholder="Enter Your Name"
+												>
+											</div>
+											<div class="col-sm-6 form-email">
+												<input type="email"
+													   required
+													   id="user-email"
+													   class="form-control"
+													   placeholder="Enter Your Email"
+												>
+											</div>
 										</div>
-										<div class="col-sm-6 form-email">
-											<input type="email"
-												   required
-												   id="user-email"
-												   class="form-control"
-												   placeholder="Enter Your Email"
-											>
-										</div>
+
 										<div class="col-md-12">
 										<textarea required
 												  minlength="2"
@@ -416,10 +423,5 @@
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.singlePageNav.min.js"></script>
 		<script src="js/custom.js"></script>
-
-		<!--TO BE REMOVED-->
-		<script id="__bs_script__">//<![CDATA[
-        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.8'><\/script>".replace("HOST", location.hostname));
-        //]]></script>
 	</body>
 </html>

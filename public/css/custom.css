@@ -40,14 +40,13 @@ h3 {
     width: 139px;
     margin-top: 10px;
     position: relative;
-    left: 7px;
 }
 
 .horizontal-separator:before {
     content: '';
     display: block;
     height: 1px;
-    width: 150px;
+    width: 139px;
     background: rgba(40, 167, 233, 0.26);
     margin: 60px auto 0 auto;
 }
@@ -119,6 +118,17 @@ p {
 
 .narrow-column {
     max-width: 800px;
+}
+
+.fa-map-marker,
+.fa-envelope-o{
+    position: absolute;
+    top: -6px;
+}
+
+.fa-phone {
+    position: absolute;
+    top: 5px;
 }
 
 /*GENERAL END*/
@@ -321,6 +331,41 @@ p {
     float: left;
     margin-top: 10px;
 }
+
+.microscope {
+    position: relative;
+    background: #28a7e9;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    float: left;
+}
+
+.microscope:before {
+    display: block;
+    background-size: contain;
+    background: url(../images/lab-microscope.png);
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    background-size: contain;
+}
+
+.bio {
+    float: none;
+    position: relative;
+    top: 7px;
+}
+
 /** CS BLOCK END **/
 
 /* PYTHON BLOCK */
@@ -356,6 +401,7 @@ p {
     right: -200px;
     top: -111px;
     opacity: 0.5;
+    display: none;
 }
 
 .designed-robot-bg img {
@@ -484,12 +530,18 @@ p {
 }
 /*ROBOT BLOCK END*/
 
+.address,
+.email {
+    display: block;
+    margin-left: 55px;
+}
+
 .phones {
-    position: absolute;
     width: 300px;
     display: inline-block;
     line-height: 1.5;
     top: -3px;
+    margin-left: 55px;
 }
 
 .phones span {
@@ -538,10 +590,15 @@ address > div {
 /** Responsive **/
 @media (min-width: 768px) {
     .container {
-        width: 850px;
+        width: 700px;
     }
 }
 
+@media (min-width: 990px) {
+    .container {
+        width: 850px;
+    }
+}
 @media (min-width: 1200px) {
     .container {
         width: 1106px;
@@ -592,6 +649,12 @@ address > div {
 
     .python-container img {
         display: none;
+    }
+}
+
+@media (min-width: 1300px) {
+    .designed-robot-bg {
+        display: block;
     }
 }
 
@@ -841,6 +904,7 @@ address > div {
         top: 95px;
         opacity: 0.2;
         height: 180px;
+        display: none;
     }
 
     .horizontal-separator:before {
@@ -887,11 +951,23 @@ address > div {
         width: 100%;
     }
 
+
+    .microscope,
     #contact address .fa {
         height: 25px;
         width: 25px;
         line-height: 25px;
-        margin-right: 15px;
+        margin-right: 10px;
+    }
+
+
+
+    .microscope:before {
+        height: 17px;
+        width: 20px;
+        top: 3px;
+        left: 4px;
+        background-size: contain;
     }
 
     #contact address .fa:before {
@@ -912,6 +988,28 @@ address > div {
         text-indent: 30px;
         line-height: 1.8;
         letter-spacing: 0.3px;
+    }
+
+    .navbar-brand {
+        max-width: 170px;
+    }
+
+    .address,
+    .email,
+    .phones {
+        margin-left: 40px;
+    }
+
+    .fa-map-marker, .fa-envelope-o {
+        top: 0px;
+    }
+
+    .designed-robot-bg {
+        display: block;
+    }
+
+    .bio {
+        top: 1px;
     }
 
 }
