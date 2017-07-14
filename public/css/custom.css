@@ -453,12 +453,12 @@ p {
 
 .robot-second-block .robot-pic-container {
     top: 0;
-    max-width: 230px;
 }
 
 .robot-pic-container {
     position: relative;
-    top: 30px
+    top: 30px;
+    left: -15px;
 }
 
 .designed-robot-container h2{
@@ -739,6 +739,14 @@ address > div {
         width: 100%;
     }
 
+    .robot-second-block .robot-pic-container {
+        max-width: 290px;
+        margin: 0 auto;
+        left: 0;
+        margin-bottom: 30px;
+    }
+
+
     .designed-robot-container.features ul {
         width: 100%;
     }
@@ -877,7 +885,14 @@ address > div {
     }
 
     .robot-second-block .robot-pic-container {
-        max-width: 180px;
+        max-width: 270px;
+        margin: 0 auto;
+        left: 0;
+        margin-bottom: 30px;
+    }
+
+    .robot-second-block {
+        padding-top: 30px;
     }
 
     .designed-robot-container ul {
