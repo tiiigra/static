@@ -38,14 +38,14 @@ function forwardUserMessage(newUser) {
         service: 'yandex',
         auth: {
             user: 'testapps.baklan@yandex.ru',
-            pass: 'test1122334455'
+            pass: 'test9999'
         }
     });
 
 // setup email data with unicode symbols
     let mailOptions = {
         from: ' "Autonomous Classroom Vehicles" <testapps.baklan@yandex.ru>', // sender address
-        to: 'baklant@i.ua', // list of receivers
+        to: 'baklantat@gmail.com', // list of receivers
         replyTo: newUser.email,
         subject: 'Autonomous Classroom Vehicles', // Subject line
         text: newUser.name + ":\n"  + newUser.message, // plain text body
